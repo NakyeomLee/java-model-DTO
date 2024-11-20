@@ -1,4 +1,6 @@
 package ex02;
 
-public interface MyConsumer {
+// 입력만 받고 출력이 없는 연산 수행
+public interface MyConsumer<T> {
+    void accept(T data);
 }
